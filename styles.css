@@ -51,3 +51,27 @@ html{scroll-padding-top:130px}
 
 /* Each service has its own editorial photograph. */
 .preservation img,.digitization img,.restoration img{object-position:center;transform:scale(1.02);filter:none}.service-grid article:hover .service-photo img{transform:scale(1.08);filter:none}
+
+
+/* Language buttons */
+.language-switcher{display:flex;align-items:center;gap:4px;margin-left:auto;padding:4px;border:1px solid rgba(14,170,166,.45);border-radius:999px;background:#102b2d;position:relative;z-index:20;flex-shrink:0}
+.language-switcher button{font:700 12px/1.2 system-ui,sans-serif;cursor:pointer;border:0;border-radius:999px;padding:8px;color:#f1ffff;background:transparent;white-space:nowrap}
+.language-switcher button:hover,.language-switcher button:focus-visible{background:#28585b}
+.language-switcher button.active{background:#0eaaa6;color:#061b1d}
+@media(max-width:720px){.language-switcher{gap:1px;padding:2px}.language-switcher button{font-size:10px;padding:7px 5px}.header{gap:6px}}
+@media(max-width:390px){.language-switcher button{font-size:9px;padding:6px 3px}}
+
+/* Ajustement du sélecteur de langues JHITS */
+@media (min-width: 1100px) {
+  .language-switcher {
+    margin-right: 36px !important;
+  }
+}
+
+.language-switcher button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
