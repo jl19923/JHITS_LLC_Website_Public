@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JHITS LLC: preservación, digitalización y restauración audiovisual de cintas VHS, películas y grabaciones cinematográficas.">
+  <meta name="theme-color" content="#0eaaa6">
+  <title>JHITS 1980 · Preservación audiovisual</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <button class="motion-toggle" type="button" aria-pressed="false">Pausar efectos</button>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="JHITS 1980, inicio"><span class="logo-crop"><img src="assets/jhits-brand-original.jpg" alt="JHITS 1980"></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menú <span aria-hidden="true">＋</span></button>
+    <nav id="navigation" aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#proceso">El proceso</a><a href="#empresa">La empresa</a><a class="nav-contact" href="#contacto">Hablemos de tu archivo <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="hero-copy"><p class="eyebrow"><span></span> PRESERVACIÓN · DIGITALIZACIÓN · RESTAURACIÓN</p><h1>El tiempo pasa.<br>La memoria<br><em>permanece.</em></h1><p class="intro">Damos continuidad a las imágenes y los sonidos que cuentan nuestra historia. Del soporte original a su futuro digital.</p><a class="button" href="#contacto">Cuéntanos tu proyecto <span aria-hidden="true">↗</span></a><a class="text-link" href="#servicios">Explorar servicios ↓</a><a class="youtube-button" href="https://youtube.com/@jhits8062?si=eIamnZw7ZSdo1Gtn" target="_blank" rel="noopener noreferrer" aria-label="Ver el canal de JHITS en YouTube (abre en una pestaña nueva)"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="5" fill="currentColor"/><path d="m10 9 6 3-6 3z" fill="white"/></svg><span>Ver JHITS en YouTube</span><span aria-hidden="true">↗</span></a></div>
+      <div class="hero-visual tilt-surface">
+        <img class="archive-hero" src="assets/archive-studio.png" alt="Composición ilustrativa con bobina de cine, película y cinta VHS en un estudio de archivo" fetchpriority="high" width="1536" height="1024">
+        <div class="visual-shade"></div><div class="scan-line" aria-hidden="true"></div>
+        <span class="visual-label">JHITS / MEMORIA EN MOVIMIENTO</span>
+        <div class="floating-label"><span class="signal-dot" aria-hidden="true"></span> EL PASADO TIENE FUTURO <span aria-hidden="true">↗</span></div>
+        <span class="visual-footnote">IMAGEN CONCEPTUAL</span>
+      </div>
+      <div class="hero-bottom"><span>UNA NUEVA VIDA PARA TU ARCHIVO</span><span>VHS / PELÍCULA / CINE</span></div>
+    </section>
+    <section id="servicios" class="section services"><div class="section-heading"><p class="eyebrow">01 / LO QUE HACEMOS</p><h2>Conservar el pasado.<br>Abrir nuevas posibilidades.</h2><p>Materiales familiares, archivos culturales y memoria cinematográfica. Cada soporte es el punto de partida de una historia que merece continuar.</p></div>
+      <div class="service-grid"><article class="tilt-surface"><span class="service-number">01 <span aria-hidden="true">↗</span></span><div class="service-photo preservation"><img src="assets/preservacion.png" alt="Bobinas y latas de película conservadas en cajas de archivo; imagen conceptual" loading="lazy" width="1536" height="1024"></div><h3>Preservación</h3><p>Preservación de materiales audiovisuales para fines de archivo y conservación cultural.</p><span class="tag">MEMORIA A LARGO PLAZO</span></article><article class="tilt-surface"><span class="service-number">02 <span aria-hidden="true">↗</span></span><div class="service-photo digitization"><img src="assets/digitalizacion.png" alt="Cinta VHS y equipo de captura para transferir vídeo analógico a digital; imagen conceptual" loading="lazy" width="1536" height="1024"></div><h3>Digitalización</h3><p>Transferencia de cintas VHS, bobinas de película y grabaciones antiguas al entorno digital.</p><span class="tag">DEL SOPORTE AL ARCHIVO</span></article><article class="tilt-surface"><span class="service-number">03 <span aria-hidden="true">↗</span></span><div class="service-photo restoration"><img src="assets/restauracion.png" alt="Inspección de fotogramas con guantes y herramientas sobre una mesa de luz; imagen conceptual" loading="lazy" width="1536" height="1024"></div><h3>Restauración</h3><p>Restauración audiovisual orientada a recuperar la lectura y el valor de imágenes y sonidos del pasado.</p><span class="tag">IMAGEN, SONIDO, HISTORIA</span></article></div>
+    </section>
+    <section class="section restoration-demo" aria-labelledby="demo-title">
+      <div class="demo-copy"><p class="eyebrow">EXPLORA / LA MIRADA CAMBIA</p><h2 id="demo-title">Redescubrir<br>cada fotograma.</h2><p>Desliza el control para explorar una interpretación visual del paso de una imagen degradada a una imagen más limpia.</p><p class="demo-disclaimer">Demostración ilustrativa con imagen generada y filtros. No representa una restauración real ni garantiza resultados.</p><label for="restore-range">Comparar apariencia de imagen</label><input id="restore-range" type="range" min="0" max="100" value="50" aria-valuetext="50 % de imagen limpia"><div class="range-labels"><span>Aspecto degradado</span><span>Aspecto limpio</span></div></div>
+      <div class="comparison" style="--split:50%"><img src="assets/archive-studio.png" alt="Escena ilustrativa para comparar dos tratamientos visuales" loading="lazy" width="1536" height="1024"><div class="comparison-aged" aria-hidden="true"><img src="assets/archive-studio.png" alt="" loading="lazy" width="1536" height="1024"></div><span class="comparison-line" aria-hidden="true"><b>↔</b></span><span class="compare-caption left">DEGRADADA</span><span class="compare-caption right">LIMPIA</span></div>
+    </section>
+    <section id="proceso" class="section process"><div><p class="eyebrow">02 / EMPEZAR ES SENCILLO</p><h2>Tu archivo tiene<br>mucho que contar.</h2><p>Cada material requiere una valoración propia. Empecemos por conocer lo que quieres conservar.</p><a class="text-link" href="mailto:jhits@jhits.es">Escríbenos a jhits@jhits.es ↗</a></div><ol><li><span>01</span><div><h3>Cuéntanos qué conservas</h3><p>Indica el tipo de soporte, la cantidad aproximada y el objetivo de tu proyecto.</p></div></li><li><span>02</span><div><h3>Definamos el alcance</h3><p>Consulta las posibilidades de preservación, digitalización o restauración de tu material.</p></div></li><li><span>03</span><div><h3>Preparemos el siguiente paso</h3><p>Acuerda con JHITS las condiciones y la forma de entrega antes de enviar originales.</p></div></li></ol></section>
+    <section id="empresa" class="section company"><div><p class="eyebrow">03 / JHITS LLC</p><h2>La memoria audiovisual<br>como propósito.</h2><p>JHITS LLC trabaja en la preservación, digitalización y restauración de materiales audiovisuales para fines de archivo y conservación cultural.</p><p>Una identidad que conecta el lenguaje del cine con la continuidad del patrimonio audiovisual.</p></div><aside><h3>Información corporativa</h3><dl><dt>Razón social</dt><dd>JHITS LLC</dd><dt>Constitución</dt><dd>New Mexico, Estados Unidos<br>21 de octubre de 2025</dd><dt>State ID</dt><dd>0008056914</dd><dt>Dirección empresarial</dt><dd>15442 Ventura Blvd., Ste 201-1938<br>Sherman Oaks, California 91403<br>United States</dd></dl></aside></section>
+    <section id="contacto" class="contact section"><p class="eyebrow">EL SIGUIENTE CAPÍTULO EMPIEZA AQUÍ</p><h2>¿Qué historia<br>quieres <em>preservar?</em></h2><p>Háblanos de tus cintas, películas o grabaciones.</p><a href="mailto:jhits@jhits.es" class="email">jhits@jhits.es <span aria-hidden="true">↗</span></a><button id="copy-email" class="copy-button" type="button">Copiar correo</button><span id="copy-status" role="status"></span></section>
+  </main>
+  <footer><span>© <span id="year">2026</span> JHITS LLC · JHITS 1980</span><span>Preservar. Recuperar. Continuar.</span><a href="#inicio">Volver arriba ↑</a></footer>
+</body>
+</html>
